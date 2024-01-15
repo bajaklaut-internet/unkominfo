@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Tor Bajak Laut",
+  "description": "Toggle your browsers connection to a tor proxy",
+  "version": "1.0",
+  "icons": {
+    "16": "src/icons/icon16.png",
+    "48": "src/icons/icon48.png",
+    "128": "src/icons/icon128.png"
+  },
+  "permissions": [
+    "proxy",
+    "notifications",
+    "declarativeNetRequest",
+    "webRequest"
+  ],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "action": {
+    "default_icon": "src/icons/not_connected.png"
+  },
+  "content_security_policy": {},
+  "host_permissions": [
+    "https://check.torproject.org/",
+    "<all_urls>"
+  ]
+}

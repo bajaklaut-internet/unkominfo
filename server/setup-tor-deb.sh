@@ -9,5 +9,6 @@ echo "SocksPort 0.0.0.0:9050" | sudo tee -a /etc/tor/torrc
 echo "SocksPolicy accept *" | sudo tee -a /etc/tor/torrc
 echo "RunAsDaemon 1" | sudo tee -a /etc/tor/torrc
 echo "DataDirectory /var/lib/tor" | sudo tee -a /etc/tor/torrc
+echo "HTTPTunnelPort 0.0.0.0:9080" | sudo tee -a /etc/tor/torrc
 
 sudo systemctl restart tor@default.service
