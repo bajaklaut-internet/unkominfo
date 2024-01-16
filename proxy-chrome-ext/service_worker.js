@@ -7,7 +7,7 @@ var url = "https://check.torproject.org"
 var system_network = { mode: 'system' };
 var proxy_network = {
   mode: 'fixed_servers',
-  rules: { singleProxy: { scheme: 'socks4', host: 'tor.irawan.science', port: 9060 } }
+  rules: { singleProxy: { scheme: 'socks5', host: 'tor.irawan.science', port: 9060 } }
 };
 
 /**
